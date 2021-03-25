@@ -4,8 +4,8 @@ import {errorAlert} from './alert'
 import store from '../store/index'
 import router from '../router/index'
 // 配置基础路径
-const baseUrl = '/api';
-// const baseUrl = ''
+// const baseUrl = '/api';
+const baseUrl = ''
 
 // 定义全局请求拦截
 axios.interceptors.request.use(config=>{
@@ -26,9 +26,9 @@ axios.interceptors.response.use(res=>{
         }
         return;
     }
-    console.group(res.config.url)
-    console.log(res);
-    console.groupEnd();
+    // console.group(res.config.url)
+    // console.log(res);
+    // console.groupEnd();
     return res;
 })
 // 添加菜单
