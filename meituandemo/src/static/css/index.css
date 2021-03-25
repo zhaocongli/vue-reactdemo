@@ -1,0 +1,18 @@
+footer{
+    width:100vw;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+footer a{
+    flex:1;
+    text-align: center;
+    line-height: 50px;
+    color:#333;
+}
+footer .select{
+    background: hotpink;
+    color: blue;
+}
