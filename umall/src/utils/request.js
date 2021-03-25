@@ -3,6 +3,7 @@ import qs from 'qs'
 import { Toast } from 'vant'
 import router from '../router/index'
 // 配置基础路径
+// const baseUrl = "";
 const baseUrl = "/api";
 // 设置请求头
 axios.interceptors.request.use(config => {
@@ -18,10 +19,10 @@ axios.interceptors.request.use(config => {
 
 // 设置响应拦截
 axios.interceptors.response.use(res => {
-    console.group('本次响应路径为:' + res.config.url)
+    // console.group('本次响应路径为:' + res.config.url)
     if (res.data.code === 200) {
-        console.log(res);
-        console.groupEnd();
+        // console.log(res);
+        // console.groupEnd();
         return res;
     }else{
         // 提示错误信息

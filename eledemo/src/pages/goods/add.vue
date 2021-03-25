@@ -152,6 +152,10 @@ export default {
     this.editor.create();
 
     this.changeRouteId();
+
+    this.event.$on('changePageInfo',res=>{
+      this.pageInfo = res;
+    })
   },
   computed: {
     ...mapGetters({
@@ -279,6 +283,7 @@ export default {
       updateGoods(this.form).then((res) => {
         successAlert(res.data.msg);
         // 更新列表页面
+        console.log(this.pageInfo);
         this.requestGoodsList({
           page: this.pageInfo.page,
           size: this.pageInfo.pageSize,

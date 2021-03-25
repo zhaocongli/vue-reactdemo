@@ -10,6 +10,7 @@ import 'vant/lib/index.css';
 Vue.use(Vant);
 
 Vue.prototype.$preImg = "http://localhost:3000";
+// Vue.prototype.$preImg = "";
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

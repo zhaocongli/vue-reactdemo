@@ -83,6 +83,8 @@ export default {
         updateGoodsList(page){
             // 更新页码
             this.pageInfo.page = page;
+            // 更新页码
+            this.event.$emit('changePageInfo',this.pageInfo);
             this.requestGoodsList({'size':this.pageInfo.pageSize,'page':page});
         },
         edit(id){
